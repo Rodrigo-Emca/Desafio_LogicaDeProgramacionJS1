@@ -29,3 +29,16 @@ function alertaPromt() {
 function alertaAmorJS() {
     alert('Yo amo JS <3')
 }
+
+//6. Al hacer clic en el botón "suma", pide 2 números y muestra el resultado de la suma en una alerta.
+
+function sumarNumeros() {
+    alert("A continuación, te pediré dos números y te devolveré el resultado.")
+    //Hay que usar el método parseInt para que al resultado ingresado, lo guarde como un número. Caso contrario, lo guarda como un string y al hacer la suma, concatena los numeros como string.
+    let numeroUno = parseInt(prompt("Ingresa el primer número: "))
+    let numeroDos = parseInt(prompt("Ingresa el segundo número: "))
+
+    const resultadoSuma = numeroUno + numeroDos;
+
+    alert("La suma de tus números es: " + resultadoSuma )
+}
